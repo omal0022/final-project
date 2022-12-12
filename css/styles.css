@@ -1,0 +1,631 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ========= MY STYLES ========== */
+
+/* GENERIC DEFAULT STYLES */
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px; /* 1em = 14px = 1rem */
+    line-height: 1.5;
+    color: #000000;
+}
+
+h1 {
+    font-size: 71px;
+    line-height: 106px;
+    margin-bottom: 17px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 48px;
+    margin-bottom: 12px;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 32px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+h4 {
+    font-size: 16px;
+    margin-bottom: 12px;
+    font-weight: bold;
+    border-bottom: 2px solid #c78b07;
+}
+
+p {
+    margin-bottom: 14px;
+}
+
+img {
+    max-width: 100%;
+    height:auto;
+}
+
+.container {
+    padding: 1em;
+}
+
+/* NAVIGATION SECTION */
+
+nav {
+    background-color: #222;
+}
+
+.logo {
+    background-color: #c78b07;
+    padding-top: 17px;
+    padding-bottom: 17px;
+}
+
+nav a:link,
+nav a:visited {
+    display: block;
+    color: #c78b07;
+    font-size: 18px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    text-decoration: none;
+    text-align: center;
+}
+nav li.current a:link, 
+nav li.current a:visited {
+    background-color:#c78b07;
+    color:#000000;
+}
+
+nav form {
+    display: flex;
+    flex-direction: row;
+    margin: 0px;
+    padding-left: 8px;
+}
+nav form button {
+    border: 1px solid #c78b07;
+    background-color: #222;
+}
+
+input[type=search] {
+    float: right;
+    color: #000000;
+    width: 100%;
+    padding-left: 8px;
+    border-radius: 2px;
+    font-size: 18px;
+    border: none;
+}
+
+  form ::placeholder {
+    color:#000000;
+    opacity: .7;
+}
+
+.fa-magnifying-glass {
+    color: #c78b07;
+    font-size: 24px;
+    padding: 6px 2px;
+}
+
+/* WELCOME SECTION */
+
+.header-welcome {
+    background-image: url(../images/main-banner.jpg);
+    background-size: cover;
+    padding-top:68px;
+    padding-bottom: 68px;
+}
+
+.header-welcome .container {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding-top: 50px;
+    padding-bottom: 1em;
+}
+
+.header-welcome button {
+    background-color: #c78b07;
+    border: none;
+    padding: 34px 34px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 22px;
+}
+
+/* ABOUT SECTION */
+
+.section-about {
+    background-color: #ffe6ac;
+}
+
+.section-about, .section-services h2 {
+    padding-top: 20px;
+}
+
+/* SERVICES SECTION */
+
+.section-services {
+    display: grid;
+    width: 100%;
+}
+
+.section-services img { 
+    width: 100%;
+    object-fit: contain;
+}
+
+.digital-transformation, .marketing, .video-production, .web-development, .print {
+    background-color: #ffe6ac;
+    margin-bottom: 1em;
+}
+
+.section-services button {
+    background-color:#000000;
+    border: none;
+    padding: 34px 34px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 22px;
+    color: white;
+}
+
+.digital-text, .marketing-text, .video-text, .web-text, .print-text{
+    padding: 0px 14px 14px 14px;
+} 
+
+/* VISION SECTION */
+
+.section-vision {background-image: url(../images/vision.jpg);
+    background-size: cover;
+    color: white;
+    background-position: center;
+} /* padding at the top, not quite right...???... */
+
+
+.section-vision button {
+    background-image: linear-gradient(90deg, #041a2e, #0b2b51);
+    border: 1px solid #c78b07;
+    padding: 34px 34px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 22px;
+    color: white;
+}
+
+/* TEAM SECTION */
+
+.section-team {
+    display: grid;
+    width: 100%;
+}
+
+.section-team img { 
+    width: 100%;
+    object-fit: contain;
+}
+
+.john, .bob {
+    background-color: #ffe6ac;
+    margin-bottom: 1em;
+}
+
+.john-text, .bob-text {
+    padding: 0 1em 1em 1em;
+}
+
+/* CONTACT SECTION */
+
+form {
+    padding-top:6px;
+}
+
+input[type=text] ,input[type=email] {
+    width: 100%;
+    padding: 9px 0px;
+    margin-bottom: 6px;
+    margin-top: 3px;
+    border: 1px solid #222;
+    border-radius: 3px;
+}
+
+#message {
+    width: 100%;
+    padding: 68px 0px;
+    border: 1px solid #222;
+    border-radius: 3px;
+}
+
+input[type=submit] {
+    background-color:#000000;
+    border: none;
+    padding: 4px 5px;
+    margin-top: 14px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 22px;
+    color:#c78b07;
+}
+
+    /* HOURS SECTION */
+  
+table {
+    margin-top: 8px;
+}
+      
+th, td {
+    border: 1px solid black;
+    padding: 1em;
+}
+
+th {
+    background-color: #ffe6ac;
+}
+
+
+  /* LOCATION SECTION */
+
+iframe {
+    width: 100%;
+    padding-top: 8px;
+}
+
+    /* FOOTER */
+
+footer {
+    background-color: #222;
+    color: #c78b07;
+    padding-top: 1em;
+}
+
+footer p:last-child {
+    margin-bottom: 0;
+}
+
+/* how to remove the padding from the bottom of the footer */
+
+
+
+
+/* ==================================
+            DESKTOP STYLES 
+================================== */
+
+/* END OF YOUR MOBILE-FIRST CSS. 
+NO MEDIA QUERIES ABOVE THIS LINE */
+
+/* TABLET STYLES: 760px to 1199px */
+@media screen and (min-width: 760px) {
+
+    .container {
+        width: 706px;
+        margin: 0 auto;
+    }
+    /* NOTHING ELSE! */ 
+}
+
+/* DESKTOP STYLES: ABOVE 1200px */
+@media screen and (min-width: 1200px) {
+
+    /* DESKTOP GENERIC DEFAULT STYLES */
+    
+    .container {
+        width: 1168px;
+        padding: 0 16px;
+        margin: 0 auto;
+        padding-bottom: 1em;
+    }
+
+    h1 {
+        font-size: 81px;
+        line-height: 120px;
+    }
+
+    h2 {
+        font-size: 54px;
+    }
+
+    h3 {
+        font-size: 36px;
+    }
+
+    h4 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    /* DESKTOP NAVIGATION MENU*/
+
+    .navigation-menu {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding-top: 35px;
+        padding-bottom: 24px;
+        width: 100%;
+    }
+
+    .navigation-menu form {
+        width: 260px;
+      }
+
+    nav ul {
+        display: flex;
+        margin-left: 60px;
+        align-items: center;
+        justify-items: center;
+    }
+
+    .logo {
+        height: 100px;
+        width: 100px;
+        padding: 0px;
+    }
+
+    .logo img {
+        height: 100px;
+        width: auto;
+    }
+    
+    nav a:link,
+    nav a:visited {
+        font-size: 18px;
+        padding: 20px 40px;
+        font-size: 19px;
+    }
+
+    nav li.current a:link, 
+    nav li.current a:visited {
+
+        padding-left: 45px;
+        padding-right: 45px;
+    }
+
+
+    /* DESKTOP WELCOME */
+
+    .header-welcome {
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        align-items: center;
+        height: 467px;
+        padding-top:48px;
+        padding-bottom: 80px;
+    }
+
+
+    .header-welcome button {
+        padding: 38px 32px;
+        font-size: 27px;
+    }
+
+    /* DESKTOP ABOUT */
+
+    .section-about .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 298px;
+    }
+
+    .section-about .container img{
+        height: 290px;
+        width: auto;
+    }
+
+    .about-text {
+        margin-left: 1em;
+    }
+
+    /* DESKTOP SERVICES */
+
+    .section-services h2 {
+        padding-top: 45px;
+     }
+
+    .services-grid {
+        display: grid;
+        column-gap: 1em;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: 720px 635px;
+          }
+        
+    .services-grid p {
+        padding-top: 24px;
+    }
+
+    .services-grid h3 {
+        padding-top: 18px;
+    }
+    
+     .digital-transformation {
+        grid-column: 1 / 4;
+        grid-row: 1 / 2;
+     }
+     .marketing {
+        grid-column: 4 / 7;
+        grid-row: 1 / 2;
+     }
+     .video-production {
+        grid-column: 1 / span 2;
+        grid-row: 2 / 3;
+     }
+     .web-development {
+        grid-column: 3 / span 2;
+        grid-row: 2 / 3;
+
+     }
+     .print   {
+        grid-column: 5 / span 2;
+        grid-row: 2 / 3;
+     }   
+
+    .section-services button{
+       width: 100%;
+       padding: 40px 30px ;
+     }
+
+     /* DESKTOP VISION */
+
+     .section-vision h3 {
+        padding-top: 30px;
+     }
+
+     .section-vision p {
+        padding-top: 20px;
+     }
+
+     .section-vision button {
+        padding: 38px 35px;
+        font-size: 27px;
+    }
+
+
+     /* DESKTOP TEAM */
+
+     .section-team {
+        padding-top: 45px;
+     }
+
+     .john {
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 389px;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+     }
+
+     .john-img {
+        height: 389px;
+        padding: 0px;
+     }
+
+    .bob {
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 389px;
+        margin-top: 0px;
+     }
+
+    .bob-text {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .bob-img {
+        height: 389px;
+        padding: 0px;
+     }
+
+    /* DESKTOP CONTACT */
+
+    .section-contact h2 {
+        padding-top: 34px;
+        padding-bottom: 24px; 
+    }
+
+    input[type=text] ,input[type=email] {
+        font-size: 15px;
+      }
+
+    input[type=submit] {
+        font-size: 24px;
+        padding: 5px 7px;
+        margin-top: 18px ;
+
+    }
+
+    .contact-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 550px 220px;
+        column-gap: 16px;
+        padding-bottom: 20px;
+        row-gap: 0px;
+    }
+
+    .contact-form {
+        grid-column: 1;
+        grid-row:1;
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+    }
+
+    .contact-form label {
+        font-size: 16px;
+    }
+
+    .hours {
+        grid-column: 1 / span 2;
+        grid-row: 2 ;
+    }
+
+    .location {
+        grid-column: 2;
+        grid-row: 1 ;
+    }
+
+    tr {
+        font-size: 16px;
+
+    }
+
+
+}
+

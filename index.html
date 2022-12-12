@@ -5,32 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Three Star Media</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <link href="css/styles.css" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/a74b2ccfb6.js" crossorigin="anonymous"></script> <!-- Font Awesome kit code -->
+
 </head>
 <body>
 
     <header>
         <nav>
             <div class="container">
-                <img src="images/logo.png" alt="Three Star Media">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Team</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-                <form>
-                    <input type="search">
-                    <button>&#128269;</button>
-                </form>
+                <div class="navigation-menu">
+                    <div class="logo">
+                            <img src="images/logo.png" alt="Three Star Media">
+                    </div>
+                    <ul>
+                        <li class="current"><a href="#">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Team</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                    <form>
+                        <input type="search" placeholder="Search"> <!-- flexbox -->
+                        <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </form>
+                </div>
             </div> <!-- end container -->
         </nav>
+
+        <!-- ========= WELCOME ========= -->
 
         <div class="header-welcome"> <!-- here is where the background image will go-->
             <div class="container">
                 <h1>Welcome to Three Star Media</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Magnam rerum voluptas nesciunt quam nostrum similique nihil laboriosam provident neque, recusandae voluptate temporibus! Animi accusamus id fuga voluptatibus facilis iusto consequuntur!</p>
-                <button>Connect with us ▶</button>
+                <button>Connect with us &nbsp; &#9658;</button>
                 
             </div> <!-- end container -->
         </div> <!-- end header-welcome -->
@@ -38,98 +53,135 @@
 
     <main>
 
-        <section class="section-about">
-            <div class="container">
-               <img src="images/about-us.jpg" alt="Three Star Media ping pong">
-               <h2>About Us</h2>
-               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Libero unde repellendus exercitationem asperiores ducimus placeat, maxime soluta nesciunt pariatur aliquam consequuntur sequi saepe sint praesentium laboriosam perferendis eius amet ad?</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Animi, velit ipsam? Atque accusamus, excepturi corrupti sunt reiciendis soluta quo commodi guidem, non perferendis vel sed facilis rerum cum in exercitationem?</p>
-            </div> <!-- end container -->
-        </section> <!-- end section-about-->
 
-        <section class="section-services">
+        <!-- ========= ABOUT ========= -->
+
+        <div class="section-about">
+            <div class="container">
+                <div class="about-image">
+                    <img src="images/about-us.jpg" alt="Three Star Media ping pong">
+                </div>
+                <div class="about-text">
+                    <h2>About Us</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Libero unde repellendus exercitationem asperiores ducimus placeat, maxime soluta nesciunt pariatur aliquam consequuntur sequi saepe sint praesentium laboriosam perferendis eius amet ad?</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Animi, velit ipsam? Atque accusamus, excepturi corrupti sunt reiciendis soluta quo commodi guidem, non perferendis vel sed facilis rerum cum in exercitationem?</p>
+                </div>
+            </div> <!-- end container -->
+        </div> <!-- end section-about-->
+
+        <!-- ========= SERVICES ========= -->
+
+        <div class="section-services">
             <div class="container">
                  <!-- layout GRID -->
                  <h2>Our Services</h2>
+                 <div class="services-grid">
                  <div class="digital-transformation">
                     <img src="images/digital.jpg" alt="Three Star Media Digital Transformation services">
-                    <h3>Digital Transformation</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Eius vel, rem inventore quo tempora animi mollitia eaque error qui consectetur in reprehenderit magnam at vitae corporis quaerat deleniti explicabo nisi?</p>
-                    <button>Digital Plans ▶</button>
+                    <div class="digital-text">
+                        <h3>Digital Transformation</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Eius vel, rem inventore quo tempora animi mollitia eaque error qui consectetur in reprehenderit magnam at vitae corporis quaerat deleniti explicabo nisi?</p>
+                        <button>Digital Plans &nbsp; &#9658;</button>
+                    </div>
                  </div> <!-- end div transformation-->
                  
                  <div class="marketing">
                     <img src="images/marketing.jpg" alt="Three Star Media Marketing services">
-                    <h3>Marketing</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Eius vel, rem inventore quo tempora animi mollitia eaque error qui consectetur in reprehenderit magnam at vitae corporis quaerat deleniti explicabo nisi?</p>
-                    <button>Marketing Plans ▶</button>
+                        <div class="marketing-text">
+                            <h3>Marketing</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Eius vel, rem inventore quo tempora animi mollitia eaque error qui consectetur in reprehenderit magnam at vitae corporis quaerat deleniti explicabo nisi?</p>
+                            <button>Marketing Plans &nbsp; &#9658;</button>
+                        </div>
                  </div> <!-- end div marketing-->
                  
                  <div class="video-production">
                     <img src="images/video.jpg" alt="Three Star Media Video Production services">
-                    <h3>Video Production</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Eius vel, rem inventore quo tempora animi mollitia eaque error qui consectetur in reprehenderit magnam at vitae corporis quaerat deleniti explicabo nisi?</p>
-                    <button>Video Plans ▶</button>
+                        <div class="video-text">
+                            <h3>Video Production</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Eius vel, rem inventore quo tempora animi mollitia eaque error qui consectetur in reprehenderit magnam at vitae corporis quaerat deleniti explicabo nisi?</p>
+                            <button>Video Plans &nbsp; &#9658;</button>
+                        </div>
                  </div> <!-- end div video production-->
 
                  <div class="web-development">
                     <img src="images/web.jpg" alt="Three Star Media Web Development services">
-                    <h3>Web Development</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Eius vel, rem inventore quo tempora animi mollitia eaque error qui consectetur in reprehenderit magnam at vitae corporis quaerat deleniti explicabo nisi?</p>
-                    <button>Web Plans ▶</button>
+                        <div class="web-text">
+                            <h3>Web Development</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Eius vel, rem inventore quo tempora animi mollitia eaque error qui consectetur in reprehenderit magnam at vitae corporis quaerat deleniti explicabo nisi?</p>
+                            <button>Web Plans &nbsp; &#9658;</button>
+                        </div>
                  </div> <!-- end div web development-->
 
                  <div class="print">
                     <img src="images/print.jpg" alt="Three Star Media Print services">
-                    <h3>Print</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Eius vel, rem inventore quo tempora animi mollitia eaque error qui consectetur in reprehenderit magnam at vitae corporis quaerat deleniti explicabo nisi?</p>
-                    <button>Print Plans ▶</button>
+                        <div class="print-text">
+                            <h3>Print</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Eius vel, rem inventore quo tempora animi mollitia eaque error qui consectetur in reprehenderit magnam at vitae corporis quaerat deleniti explicabo nisi?</p>
+                            <button>Print Plans &nbsp; &#9658;</button>
+                        </div>
                  </div> <!-- end div print-->
-
+                </div>
+            
             </div> <!-- end container -->
-        </section> <!-- end section-services-->
+        </div> <!-- end section-services-->
         
+        <!-- ========= VISION ========= -->
+
         <section class="section-vision"> <!-- here is where the background image will go-->
             <div class="container">
                 <h3>Our Vision</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Ex voluptatem deleniti lure, sit, accusantium rerum est commodi veniam tempora perspiciatis nobis officiis fagiat eaque. Veritatis exercitationem delectus ex ab laudantium.</p>
-                <button>Learn More ▶</button>
+                <button>Learn More &nbsp; &#9658;</button>
             </div> <!-- end container -->
         </section> <!-- end section-vision-->
                
+        <!-- ========= TEAM ========= -->
+
         <section class="section-team">
             <div class="container">
                 <!-- layout GRID-->
-                <h2>Our Team</h2>
-                
-                <div class="john-image">
-                    <img src="images/john.jpg" alt="Three Star Media Team John Doe">
-                </div><!-- end john-image -->
+                <div class="our-team">
+                    <h2>Our Team</h2>
+                </div> 
+                <div class="john-grid">
+                    <div class="john">
+                        <div class="john-image">
+                                <img src="images/john.jpg" alt="Three Star Media Team John Doe">
+                        </div><!-- end john-image -->
 
-                <div class="john-doe">
-                    <h3>John Doe</h3>
-                    <h4>CEO and Co-owner</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Amet, aspernatur ratione sed cum ad officiis sint comque fugiat similique. Earum laudantium deleniti possimus? Voluptatem architecto repellendus harum sit voluptatum tempora.</p>
-                 </div><!-- end john-doe -->
- 
-                 <div class="bob-rite">
-                     <h3>John Doe</h3>
-                     <h4>CFO and Co-owner</h4>
-                     <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Amet, aspernatur ratione sed cum ad officiis sint comque fugiat similique. Earum laudantium deleniti possimus? Voluptatem architecto repellendus harum sit voluptatum tempora.</p>
-                  </div><!-- end bob-rite -->
-                
-                <div class="bob-image">
-                    <img src="images/bob.jpg" alt="Three Star Media Team Bob Rite">
-                </div><!-- end bob-image -->
+                        <div class="john-text">
+                                <h3>John Doe</h3>
+                                <h4>CEO and Co-owner</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Amet, aspernatur ratione sed cum ad officiis sint comque fugiat similique. Earum laudantium deleniti possimus? Voluptatem architecto repellendus harum sit voluptatum tempora.</p>
+                        </div><!-- end john-text -->
+                    </div>
+                </div>
 
+                <div class="bob-grid">
+                    <div class="bob">
+                        <div class="bob-image">
+                            <img src="images/bob.jpg" alt="Three Star Media Team Bob Rite">
+                        </div><!-- end bob-image -->
+
+                        <div class="bob-text">
+                                <h3>Bob Rite</h3>
+                                <h4>CFO and Co-owner</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Amet, aspernatur ratione sed cum ad officiis sint comque fugiat similique. Earum laudantium deleniti possimus? Voluptatem architecto repellendus harum sit voluptatum tempora.</p>
+                        </div><!-- end bob-text -->
+                    </div>
+                </div>
             </div> <!-- end container -->
         </section> <!-- end section-team-->
+
+        <!-- ========= CONTACT ========= -->
 
         <section class="section-contact">
             <div class="container">
                 <!-- h2, form, google maps embed, table ON A GRID-->
+                
+                <h2>Contact Us</h2>
+                <div class="contact-grid">
                 <div class=contact-form>
-                    <h2>Contact Us</h2>
                     <h3>Send us a message</h3>
                     <form>
                         <label for="name">Full name</label><br>
@@ -142,13 +194,8 @@
                     </form> 
                 </div> <!-- end contact-form-->
 
-                <div class="location">
-                    <h2>Location</h2>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44863.11580051551!2d-75.82497464179684!3d45.3499278!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1669306977528!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div> <!-- end location-->
-
                 <div class="hours">
-                    <h2>Hours of operation</h2>
+                    <h3>Hours of operation</h3>
                     <table style="width:100%">
                         <tr>
                           <th>Days</th>
@@ -164,6 +211,12 @@
                         </tr>
                       </table>
                 </div> <!-- end hours -->
+
+                <div class="location">
+                    <h3>Location</h3>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44863.11580051551!2d-75.82497464179684!3d45.3499278!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1669306977528!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div> <!-- end location-->
+            </div>
                   
             </div> <!-- end container -->
         </section> <!-- end section-contact-->
