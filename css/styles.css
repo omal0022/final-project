@@ -246,6 +246,12 @@ input[type=search] {
     color: white;
 }
 
+.section-vision h3 {
+    padding-bottom: 12px;
+    padding-top: 7px;
+}
+
+
 /* TEAM SECTION */
 
 .section-team {
