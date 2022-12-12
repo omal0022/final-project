@@ -69,6 +69,7 @@ h2 {
     font-size: 48px;
     margin-bottom: 12px;
     font-weight: bold;
+    padding-top: 20px;
 }
 
 h3 {
@@ -189,11 +190,11 @@ input[type=search] {
     background-color: #ffe6ac;
 }
 
-.section-about, .section-services h2 {
+/* SERVICES SECTION */
+
+.section-services h3 {
     padding-top: 20px;
 }
-
-/* SERVICES SECTION */
 
 .section-services {
     display: grid;
@@ -250,6 +251,10 @@ input[type=search] {
 .section-team {
     display: grid;
     width: 100%;
+}
+
+.section-team h3 {
+    padding-top: 8px;
 }
 
 .section-team img { 
@@ -461,7 +466,8 @@ NO MEDIA QUERIES ABOVE THIS LINE */
     .section-about .container{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 298px;
+        grid-template-rows: 320px;
+        align-items: center;
     }
 
     .section-about .container img{
@@ -540,7 +546,7 @@ NO MEDIA QUERIES ABOVE THIS LINE */
      /* DESKTOP TEAM */
 
      .section-team {
-        padding-top: 45px;
+        padding-top: 20px;
      }
 
      .john {
